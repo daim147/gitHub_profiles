@@ -1,0 +1,108 @@
+/* **********************GOOGLE FONT LINK**************** */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #2a2a72;
+  color: white;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.user-form{
+  width: 100%;
+  max-width: 700px;
+}
+.user-form input{
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+  0 15px 40px rgba(0, 0, 0, 0.1);
+}
+.user-form input::placeholder{
+  color: #bbb;
+}
+.card{
+  max-width: 800px;
+  background-color: #4c2885;
+  border-radius: 20px;
+  box-shadow:  0 5px 10px rgba(154, 160, 185, 0.05),
+  0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+
+}
+.avatar{
+  border-radius: 50%;
+  border: 10px solid #2a2a72;
+  width: 150px;
+  height: 150px;
+}
+.user-info{
+  color: #eee;
+  margin-left: 2rem;
+
+}
+.user-info h2{
+  margin-top: 0;
+}
+.user-info ul{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 1rem 0;
+  max-width: 400px;
+
+}
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.2rem;
+}
+.repos{
+  color: white;
+  background-color: #2a2a72;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+@media (max-width: 500px){
+  html{
+    font-size: 62.5%;
+  }
+  .card{
+  
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-form{
+    max-width: 400px;
+  }
+}
